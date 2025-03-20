@@ -19,3 +19,4 @@ Route::get('/', [HomeController::class, 'index']);
 
 
 Route::get('redirect', [HomeController::class, 'redirect']);
+Route::get('logout', [HomeController::class, 'logout']);

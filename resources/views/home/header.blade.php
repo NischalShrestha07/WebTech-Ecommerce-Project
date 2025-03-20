@@ -41,17 +41,17 @@
                     @auth
 
                     <li class="nav-item">
-                        {{-- <a class="btn btn-danger" href="contact.html">Logout</a> --}}
+                        {{-- <a class="btn btn-danger" href="{{route('logout')}}">Logout</a> --}}
                         <x-app-layout>
                         </x-app-layout>
                     </li>
 
                     @else
                     <li class="nav-item">
-                        <a class="btn btn-primary" href="contact.html">Login</a>
+                        <a class="btn btn-primary" href="{{route('login')}}">Login</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="btn btn-success" href="contact.html">Register</a>
+                    <li class="nav-item ml-3">
+                        <a class="btn btn-success" href="{{route('register')}}">Register</a>
                     </li>
                     @endauth
                     @endif
