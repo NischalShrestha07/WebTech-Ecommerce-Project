@@ -30,7 +30,8 @@
                 <div class="div_center">
                     <h2 class="h2_font">Add Category</h2>
 
-                    <form action="">
+                    <form action="" method="POST">
+                        @csrf
 
                         <input style="color: black; " type="text" name="name" placeholder="Category Name">
                         <input type="submit" class="btn btn-primary" name="submit" value="Add Category">
